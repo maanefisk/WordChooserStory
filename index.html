@@ -1,53 +1,64 @@
-<!DOCTYPE html>
+d<!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="stylesheet.css">
 
 <body>
 
 <div>
-<p>Rosemary, Rosmarinus -</p>
-<p id="answer1">
-    ___
-</p>
-- .
 
-<select id="boks1">
+    <p>Rosemary, Rosmarinus&nbsp;</p>
+
+<p id="answer1" >___</p>
+
+<p> .</p>
+
+<p>&nbsp;
+<select id="boks1" onchange="showDiv(this)">
     <option> </option>
-    <option>Officinalis</option>
-    <option>Robur</option>
+    <option value="Officinalis">Officinalis</option>
+    <option value ="Robur">Robur</option>
 </select>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<p>Belongs to the -</p>
-<p id="answer2">
-    ___
 </p>
-- family.
 
-<select id="boks2">
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p>Belongs to the&nbsp;</p>
+
+<p id="answer2" >___</p>
+
+<p>&nbsp;family.</p>
+
+<p>&nbsp;
+<select id="boks2" onchange="showDiv2(this)">
     <option> </option>
-    <option>Lily</option>
-    <option>Mint</option>
+    <option value="Lily">Lily</option>
+    <option value="Mint">Mint</option>
 </select>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<p>Grows -</p>
-<p id="answer3">
-    ___
 </p>
-- on the hillsides of southern Mediterranian countries.
 
-<select id="boks3">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p>Grows&nbsp;</p>
+
+<p id="answer3" >___&nbsp;</p>
+
+<p>&nbsp;on the hillsides of southern Mediterranian countries.</p>
+
+<p>&nbsp;
+<select id="boks3" onchange="showDiv3(this)">
     <option> </option>
-    <option>as a bush on dry scrub land</option>
-    <option>wild, on limestone with very little soil</option>
+    <option value="as a bush on dry scrub land">as a bush on dry scrub land</option>
+    <option value="wild, on limestone with very little soil">wild, on limestone with very little soil</option>
 </select>
+</p>
+
 <br/>
 <br/>
 <br/>
@@ -56,7 +67,7 @@
 <img src="https://www.yates.com.au/content/dam/yates/plants/herbs/pr-tn-herb-rosemary.jpg/_jcr_content/renditions/cq5dam.thumbnail.800.800.png.transform/q/image.jpg">
 <br/>
 <br/>
-<p>
+<p class="reward" id="ward">
     Parts used are the leaves, and use them fresh if you can. <br/>
     Properties: Diuretic, antiseptic, astringent and wound healing. <br/>
     It is antidepressant, tonic and calms the nerves. <br/>
@@ -69,19 +80,40 @@
 
 </div>
 
+<div> 
+    <br/>
+    <br/>
+</div>
 
 
 <script>
 
+const lineone = document.getElementById("answer1");
+const linetwo = document.getElementById("answer2");
+const linethree = document.getElementById("answer3");
 
+var gevinst = document.getElementById("ward");
 
+function showDiv(selectedcat) {
+    lineone.innerHTML = (selectedcat.value)
+    if (lineone.innerText == 'Officinalis') {
+        gevinst.style.display="block";
+    }
+}
+function showDiv2(selectedcat) {
+    linetwo.innerHTML = (selectedcat.value)
+    if (linetwo.innerText == 'Mint') {
+        gevinst.style.display="block";
+    }
+}
+function showDiv3(selectedcat) {
+    linethree.innerHTML = (selectedcat.value)
+    if (linethree.innerText == 'as a bush on dry scrub land') {
+        gevinst.style.display="block";
+    }
+}
     
+
 </script>
-
-
-
-
-
 </body>
-
 </html>

@@ -1,6 +1,8 @@
 
 
 body {
+    margin: 0px;
+    width: 100vh;
     font-size: 0px;
     color: rgb(215, 236, 195);
     font-family: monospace;
@@ -8,19 +10,22 @@ body {
 
 div {
     font-size: 16px;
-    float: left;
     padding: 20px;
     background-color: rgb(90, 114, 67);
     
 }
 
 p {
-    
-    font-size: 16px;
     float: left;
+    font-size: 16px;
 }
 
 select {
-    color: rgb(215, 236, 195);
+    
     background-color: rgb(60, 71, 49);
+    color: rgb(215, 236, 195);
+}
+
+.reward {
+    display: none;
 }
