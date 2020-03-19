@@ -1,0 +1,26 @@
+
+
+body {
+    font-size: 0px;
+    color: rgb(215, 236, 195);
+    font-family: monospace;
+}
+
+div {
+    font-size: 16px;
+    float: left;
+    padding: 20px;
+    background-color: rgb(90, 114, 67);
+    
+}
+
+p {
+    
+    font-size: 16px;
+    float: left;
+}
+
+select {
+    color: rgb(215, 236, 195);
+    background-color: rgb(60, 71, 49);
+}
