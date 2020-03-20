@@ -29,3 +29,8 @@ select {
 .reward {
     display: none;
 }
+
+audio {
+    background-color: rgb(60, 71, 49);
+    
+}
